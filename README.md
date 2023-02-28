@@ -8,4 +8,6 @@ This colab is based on ShivamShrirao's repository, modified so that it will inst
 ### Why? 
 The original colab has on occasion suffered from changes in dependencies affecting the models trained with numerous complaints that the results aren't quite the same as they were before. Anecdotally, this appeared to reach a peak at around early January 2023.  Though things seem to have settled, the occasional comment still arises. 
 
-This colab will install diffusers and clone a few files in the state that they were on 25th December 2022. The only exception being the conversion scripts, since the up-to-date versions support the safetensors format. 
+The aim of this colab is to :
+1) Install diffusers and clone a few files in the state that they were on 25th December 2022. The only exception being the conversion scripts, since the up-to-date versions support the safetensors format. 
+2) Install package dependencies, according to what was available at the time.  Some of this is admittedly guesswork. 
