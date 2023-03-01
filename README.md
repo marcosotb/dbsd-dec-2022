@@ -6,9 +6,7 @@
 This colab is based on ShivamShrirao's repository, modified so that it will install diffusers of commit hash `47f456ea3dd3c6ba3f5cc1bcc0f69e79c787208b` from 25 December 2022.
 
 ### Why? 
-The original colab has on occasion suffered from sudden changes in dependencies affecting the models that are trained resulting in complaints that the results aren't quite the same as they were before. Anecdotally, this appeared to reach a peak at around early January 2023.  Though things seem to have settled, the occasional comment still arises. 
+The performance of models trained on the original colab has occasionally been affected by sudden changes in dependencies, resulting in complaints about inconsistencies in the results. This issue seemed to have peaked in early January 2023, according to anecdotal evidence. Although the situation has stabilized, there are still sporadic comments regarding this matter.
 
-The aim of this colab is to :
-1) Install diffusers and clone a few files in the state that they were on 25th December 2022. The only exception being the conversion scripts, since the up-to-date versions support the safetensors format. 
-2) Install package dependencies, according to what was available at the time.  
-3) Hopefully have a frozen version for as long as possible. 
+The aim of this colab is to lock-in dependencies from around the time as well as build and install diffusers from that commit. 
+The only exception being the conversion scripts, since the up-to-date versions support the safetensors format. 
