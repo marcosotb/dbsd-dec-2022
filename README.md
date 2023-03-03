@@ -3,7 +3,7 @@
 </a>
 
 # Dreambooth Stable Diffusion Xmas Edition
-This colab is based on ShivamShrirao's repository, modified so that it will install diffusers of commit hash `47f456ea3dd3c6ba3f5cc1bcc0f69e79c787208b` from 25 December 2022.
+This colab is based on ShivamShrirao's repository, modified to use older dependencies from late 2022.  `47f456ea3dd3c6ba3f5cc1bcc0f69e79c787208b` from 25 December 2022.
 
 ### Why? 
 The performance of models trained on the original colab has occasionally been affected by sudden changes in dependencies, resulting in complaints about inconsistencies in the results. This issue seemed to have peaked in early January 2023, according to anecdotal evidence. Although the situation has stabilized, there are still sporadic comments regarding this matter.
