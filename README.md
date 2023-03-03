@@ -2,7 +2,7 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-# Dreambooth Stable Diffusion Xmas Edition
+# Dreambooth Stable Diffusion Winter 2022 Edition
 This colab is based on ShivamShrirao's repository, modified to use older dependencies from late 2022.  
 The diffusers repo will be locked to commit: `xxxxxxxxxxxxxxxxx` 2022-03-03
 
