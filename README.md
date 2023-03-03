@@ -11,3 +11,5 @@ The performance of models trained on the original colab has occasionally been af
 
 The aim of this colab is to lock-in dependencies from around the time as well as build and install diffusers from that commit. 
 
+train_dreambooth.py needs to be modified since calls are made that require Accelerate 0.14.0 but we are using 0.12.0.  Specifically, references to the use of `accelerator.unwrap_model(model, keep_fp32_wrapper=True)`. need to be changed to just `accelerator.unwrap_model(model)`
+
