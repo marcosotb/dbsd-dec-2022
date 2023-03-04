@@ -48,6 +48,7 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 * If empty, defaults will be used. 
 
 ## Cell 3. Download / Convert Model & Set Model Path
+#### Only fill one field. If both fields are filled-in then the last field will be used. <br>
 #### HUGGINGFACE_MODEL_PATH
 * Use this field to point to the HuggingFace repo `user/repo-name` format.
   * `runwayml/stable-diffusion-v1-5`
