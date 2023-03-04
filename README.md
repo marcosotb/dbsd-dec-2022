@@ -100,3 +100,14 @@ Training cell contains quite a few parameters. A few that are likely to be chang
 #### SAVE_MIN_STEPS
 * Start saving weights at and after N steps.
 
+## Cell 7. Generate Grid of Preview Images Generated During Training (Optional)
+Generate an XY grid of the preview images that were generated at every saved weight interval.
+
+## Cell 8a. Convert All Weights To ckpt / safetensors. 
+Convert all the saved weights to either ckpt or safetensor
+#### MODEL_NAME_PREFIX
+* name of the model. if it is `Tom_zwx` then models will be `Tom_zwx_xxx.ckpt` or `Tom_zwx_xxx.safetensor` where xxx is the step value.
+#### MODEL_FORMAT
+* select format of the checkpoint file. 
+#### fp16
+* Whether to convert to half-precision fp16, (reduces filesize down to 2GB).
