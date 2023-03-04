@@ -12,7 +12,7 @@ https://github.com/ShivamShrirao/diffusers/tree/main/examples/dreambooth
 This also serves as an exercise of me to to learn a bit of Python, Jupyter and git, as all are kinda new for me. 
 
 ### Why? 
-The performance of models trained on the original colab has occasionally been affected by sudden changes in dependencies, resulting in complaints about inconsistencies in the results. This issue seemed to have peaked in early January 2023, according to anecdotal evidence. Although the situation has stabilized, there are still occasional comments regarding this matter.
+The performance of models trained on the original colab has occasionally been affected by sudden changes in dependencies, resulting in complaints about inconsistencies in the results. This issue seemed to have peaked in early January 2023 and although the situation seems to be back to normal, there are still occasional comments regarding this matter.
 
 The aim of this colab is to lock-in dependencies from late 2022. Diffusers from the repo isbuilt and installed from Commit `fbdf0a17055ffa34679cb34d986fabc1296d0785`. 
 
