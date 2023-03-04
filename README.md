@@ -48,4 +48,20 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 * If empty, defaults will be used. 
 
 ## Cell 3. Download / Convert Model & Set Model Path
-Use the first field to point to the HuggingFace repo `user/repo-name` format.  If it is local (on your Google Drive), you can just point it to that location
+#### HUGGINGFACE_MODEL_PATH
+* Use this field to point to the HuggingFace repo `user/repo-name` format.
+  * `runwayml/stable-diffusion-v1-5`
+* If it is local (on your Google Drive), you can just point it to that location
+  * `drive/MyDrive/diffusers-models/sd15` (relative)
+  * `/content/drive/MyDrive/diffusers-models/sd15` (absolute)
+#### CKPT_SAFETENSOR_URL
+* Use this field to directly download a ckpt/safetensor model which will then be converted to diffusers.
+* Links from various sources are supported including HuggingFace, Civitai, Google Drive (that isn't mounted)
+  * `https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt` \
+  * `https://civitai.com/api/download/models/6987?type=Model&format=PickleTensor` \
+  * `https://civitai.com/api/download/models/6987?type=Model&format=SafeTensor` \
+  * `https://drive.google.com/file/d/1JEZCyW36ziz9Fn482MUG8T0_2P4FGG-/view?usp=share_link` _(google drive share link)_ \
+
+
+
+
