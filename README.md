@@ -86,7 +86,7 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 * A file `concepts_list.json` will be created.
 * To keep things simple, the list is only for one subject/concept, but can easily be adapted for multiple subjects. (see code)
 
-
-
+## Cell 5. Upload Instance (Training) Images
+* If the instance directory defined (in Cell 4) does not already contain images, manually upload instance images to the folder 
 
 
