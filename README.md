@@ -19,7 +19,9 @@ The aim of this colab is to lock-in dependencies from late 2022. Diffusers from 
 train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) are made that require Accelerate 0.14.0 but we are using 0.12.0.  Specifically, references to the use of `accelerator.unwrap_model(model, keep_fp32_wrapper=True)`. need to be changed to just `accelerator.unwrap_model(model)`
 
 ## Cell 1
-Mount Google Drive.  This isn't essential but if you store training images, models there then you need to mount it. 
+Mount Google Drive.  Will act like a local drive in the colab's filesystem. This isn't essential but you should mount the drive if: 
+* You store training images, models and other resources needed for training.  
+* You wish to quickly save trained models there so you can download at a later time.
 
 ## Cell 2
 Build Environment. Downloads and installs required dependencies. 
