@@ -30,12 +30,19 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 * Scripts to convert to and from Stable Diffusion Original (ckpt/safetensors) and Diffusers are also downloaded. 
 * File train_dreambooth.py will be modified upon download to remove references to `keep_fp32_wrapper=True` when function `accelerator.unwrap_model()` is used since it is not available in Accelerate 0.12.0
 
-## Cell 3. Token Word, Class Word & Class Prompt
-* Enter Token and Class words. 
-* Token word can be anything but ideally it should be short.  Avoid common nouns and names since they are very likely to have a strong prior already in the model you are training on.
-* Example tokens: `skff, rune, nlwx...`
-* In my experience, if likeness of trained subject isn't quite right, using a different token might improve things. Some people use the same token for all their trained subjects. Some don't.  You can experiment and see what works best for you.
-* Example class words : `person, man, woman, dog, cat, car`
+## Cell 2. Token Word, Class Word & Class Prompt
+#### Token Word.
+* Can be anything but ideally it should be short.  
+* Avoid common nouns and names since they are very likely to have a strong associations already in the model you are training on.
+* Examples : `skf, lun, whoo, olis...`
+#### Class Word. 
 * Class word should represent the broad concept you are trying to train
-* Class Prompt is used for generating class images used for regularization.  These will be generated from the base model that you are training on. This can be the same as Class Word or more descriptive such as, `photo of a person`.  If you are providing your own set of class images, then this prompt will be ignored. 
+* Examples: `person, man, woman, dog, cat, car`
+* Token and Class word are used together to represent your subject being trained. \
+* Example: `photo of [zwf] [person] sitting in a cafe.` \
+#### Class Prompt 
+* Used for generating class images used for regularization.  
+* Generated from the base model that you are training on. 
+* Can be the same as Class Word or more descriptive such as, `photo of a person`.  
+* If you are providing your own set of class images, then this prompt will be ignored. 
 * If empty, defaults will be used. 
