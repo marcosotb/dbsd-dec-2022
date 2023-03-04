@@ -105,9 +105,12 @@ Generate an XY grid of the preview images that were generated at every saved wei
 
 ## Cell 8a. Convert All Weights To ckpt / safetensors. 
 Convert all the saved weights to either ckpt or safetensor
-#### MODEL_NAME_PREFIX
+##### MODEL_NAME_PREFIX
 * name of the model. if it is `Tom_zwx` then models will be `Tom_zwx_xxx.ckpt` or `Tom_zwx_xxx.safetensor` where xxx is the step value.
-#### MODEL_FORMAT
+##### MODEL_FORMAT
 * select format of the checkpoint file. 
-#### fp16
+##### fp16
 * Whether to convert to half-precision fp16, (reduces filesize down to 2GB).
+
+## Cell 8b. Convert Specific Weight To ckpt / safetensors
+Same as 8a. but just for one weight. 
