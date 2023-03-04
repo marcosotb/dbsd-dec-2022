@@ -63,5 +63,25 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
   * `https://drive.google.com/file/d/1JEZCyW36ziz9Fn482MUG8T0_2P4FGG-/view?usp=share_link` _(google drive share link)_ \
 * Model will be converted into directory `/content/diffusers-<name of model>`
 
+## Cell 4. Instance, Class, Output Directory Settings
+
+#### INSTANCE_DIR
+* Directory for instance (training) images. Leave blank for default. 
+* Default is `training_images/{TOKEN_WORD}` 
+#### CLASS_DIR
+* Directory for class images. Leave blank for default. 
+* Default is `class_images/{CLASS_WORD}` 
+* When training starts, if no class images exist in this directory then they will be created then (slower). 
+#### SAVE_TO_GOOGLE_DRIVE
+* Save trained models directly to google drive. 
+* If you are saving multiple models at intervals as well as converting to ckpts or safetensors, you will need a lot of storage, so this is off by default.
+* You can selectively save your model(s) to Google Drive after training.
+#### OUTPUT_DIR
+* Enter the directory to save trained model(s)okay in. Leave empty for default. 
+* Default is : 
+  * `stable_diffusion_weights/{TOKEN_WORD}` or..
+  * `drive/MyDrive/stable_diffusion_weights/{TOKEN_WORD}` (save to google drive)
+
+
 
 
