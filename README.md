@@ -120,4 +120,4 @@ Convert all the saved weights to either ckpt or safetensor
 ___
 
 ## Cell 8b. Convert Specific Weight To ckpt / safetensors
-Same as 8a. but just for one weight whose directory needs to be specified
+Same as 8a. but just for one weight whose directory needs to be specified.
