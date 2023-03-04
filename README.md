@@ -61,7 +61,7 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
   * `https://civitai.com/api/download/models/6987?type=Model&format=PickleTensor` \
   * `https://civitai.com/api/download/models/6987?type=Model&format=SafeTensor` \
   * `https://drive.google.com/file/d/1JEZCyW36ziz9Fn482MUG8T0_2P4FGG-/view?usp=share_link` _(google drive share link)_ \
-
+* Model will be converted into directory `/content/diffusers-<name of model>`
 
 
 
