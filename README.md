@@ -36,5 +36,5 @@ Mount Google Drive.  Will act like a local drive in the colab's filesystem. This
 * Example tokens: `skff, rune, nlwx...`
 * In my experience, if likeness of trained subject isn't quite right, using a different token might improve things. Some people use the same token for all their trained subjects. Some don't.  You can experiment and see what works best for you.
 * Example class words : `person, man, woman, dog, cat, car`
-* 
+* Class word should represent the broad concept you are trying to train
 * If empty, defaults will be used. 
