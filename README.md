@@ -30,7 +30,7 @@ Mount Google Drive.  Will act like a local drive in the colab's filesystem. This
 * Scripts to convert to and from Stable Diffusion Original (ckpt/safetensors) and Diffusers are also downloaded. 
 * File train_dreambooth.py will be modified upon download to remove references to `keep_fp32_wrapper=True` when function `accelerator.unwrap_model()` is used since it is not available in Accelerate 0.12.0
 
-## Cell 3. Token, Class Words & Class Prompt
+## Cell 3. Token Word, Class Word & Class Prompt
 * Enter Token and Class words. 
 * Token word can be anything but ideally it should be short.  Avoid common nouns and names since they are very likely to have a strong prior already in the model you are training on.
 * Example tokens: `skff, rune, nlwx...`
