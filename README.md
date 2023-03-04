@@ -3,8 +3,11 @@
 </a>
 
 # Dreambooth Stable Diffusion Winter 2022 Edition
-This colab is based on ShivamShrirao's repository, modified to use older dependencies from late 2022.  
+This colab is based on ShivamShrirao's repository and colab, modified to use older dependencies from late 2022.  
 The diffusers repo itself will be locked to commit: `fbdf0a17055ffa34679cb34d986fabc1296d0785` 2022-03-02
+
+https://github.com/ShivamShrirao/diffusers/ \
+https://github.com/ShivamShrirao/diffusers/tree/main/examples/dreambooth
 
 This also serves as an exercise of me to to learn a bit of Python, Jupyter and git, as all are kinda new for me. 
 
