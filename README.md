@@ -29,7 +29,7 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 * Diffusers itself will be installed from commit `fbdf0a17055ffa34679cb34d986fabc1296d0785`.  
 * Scripts to convert to and from Stable Diffusion Original (ckpt/safetensors) and Diffusers are also downloaded. 
 * File train_dreambooth.py will be modified upon download to remove references to `keep_fp32_wrapper=True` when function `accelerator.unwrap_model()` is used since it is not available in Accelerate 0.12.0
-
+___
 ## Cell 2. Token Word, Class Word & Class Prompt
 #### Token Word.
 * Can be anything but ideally it should be short.  
@@ -46,7 +46,7 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 * Can be the same as Class Word or more descriptive such as, `photo of a person`.  
 * If you are providing your own set of class images, then this prompt will be ignored. 
 * If empty, defaults will be used. 
-
+___
 ## Cell 3. Download / Convert Model & Set Model Path
 #### Only fill one field. If both fields are filled-in then the last field will be used. <br>
 #### HUGGINGFACE_MODEL_PATH
@@ -63,7 +63,7 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
   * `https://civitai.com/api/download/models/6987?type=Model&format=SafeTensor` \
   * `https://drive.google.com/file/d/1JEZCyW36ziz9Fn482MUG8T0_2P4FGG-/view?usp=share_link` _(google drive share link)_ \
 * Model will be converted into directory `/content/diffusers-<name of model>`
-
+___
 ## Cell 4. Instance, Class, Output Directory, Concepts List Settings
 #### INSTANCE_DIR
 * Directory for instance (training) images. Leave blank for default. 
@@ -85,10 +85,10 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 #### CONCEPTS LIST
 * A file `concepts_list.json` will be created.
 * To keep things simple, the list is only for one subject/concept, but can easily be adapted for multiple subjects. (see code)
-
+___
 ## Cell 5. Upload Instance (Training) Images
 * If the instance directory defined (in Cell 4) does not already contain images, manually upload instance images to the folder 
-
+___
 ## Cell 6. Training!
 Training cell contains quite a few parameters. A few that are likely to be changed most often have been have been presented on the colabl cell's form:
 #### NUM_CLASS_IMAGES
@@ -99,9 +99,10 @@ Training cell contains quite a few parameters. A few that are likely to be chang
 * Save weights at every N steps. (set this to same as or greater than MAX_TRAIN_STEPS to only have one set of weights saved)
 #### SAVE_MIN_STEPS
 * Start saving weights at and after N steps.
-
+___
 ## Cell 7. Generate Grid of Preview Images Generated During Training (Optional)
 Generate an XY grid of the preview images that were generated at every saved weight interval.
+___
 
 ## Cell 8a. Convert All Weights To ckpt / safetensors. 
 Convert all the saved weights to either ckpt or safetensor
@@ -111,6 +112,7 @@ Convert all the saved weights to either ckpt or safetensor
 * select format of the checkpoint file. 
 ##### fp16
 * Whether to convert to half-precision fp16, (reduces filesize down to 2GB).
+___
 
 ## Cell 8b. Convert Specific Weight To ckpt / safetensors
 Same as 8a. but just for one weight. 
