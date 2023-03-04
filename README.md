@@ -89,4 +89,14 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 ## Cell 5. Upload Instance (Training) Images
 * If the instance directory defined (in Cell 4) does not already contain images, manually upload instance images to the folder 
 
+## Cell 6. Training!
+* Training cell contains quite a few parameters. A few that are likely to be changed most often have been have been presented on the colabl cell's form:
+#### NUM_CLASS_IMAGES
+* Number of Class images to generate and/or use. \
+#### MAX_TRAIN_STEPS
+* Maximum number of steps to train. \
+#### SAVE_INTERVAL
+* Save weights at every N steps. (set this to same as or greater than MAX_TRAIN_STEPS to only have one set of weights saved)\ 
+#### SAVE_MIN_STEPS
+* Start saving weights at and after N steps. \
 
