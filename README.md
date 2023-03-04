@@ -46,3 +46,6 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 * Can be the same as Class Word or more descriptive such as, `photo of a person`.  
 * If you are providing your own set of class images, then this prompt will be ignored. 
 * If empty, defaults will be used. 
+
+## Cell 3. Download / Convert Model & Set Model Path
+Use the first field to point to the HuggingFace repo `user/repo-name` format.  If it is local (on your Google Drive), you can just point it to that location
