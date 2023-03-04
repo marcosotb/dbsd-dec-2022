@@ -4,7 +4,9 @@
 
 # Dreambooth Stable Diffusion Winter 2022 Edition
 This colab is based on ShivamShrirao's repository, modified to use older dependencies from late 2022.  
-The diffusers repo will be locked to commit: `fbdf0a17055ffa34679cb34d986fabc1296d0785` 2022-03-02
+The diffusers repo itself will be locked to commit: `fbdf0a17055ffa34679cb34d986fabc1296d0785` 2022-03-02
+
+This also serves as an exercise of me to to learn a bit of Python, Jupyter and git, as all are kinda new for me. 
 
 ### Why? 
 The performance of models trained on the original colab has occasionally been affected by sudden changes in dependencies, resulting in complaints about inconsistencies in the results. This issue seemed to have peaked in early January 2023, according to anecdotal evidence. Although the situation has stabilized, there are still sporadic comments regarding this matter.
