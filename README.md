@@ -63,8 +63,7 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
   * `https://drive.google.com/file/d/1JEZCyW36ziz9Fn482MUG8T0_2P4FGG-/view?usp=share_link` _(google drive share link)_ \
 * Model will be converted into directory `/content/diffusers-<name of model>`
 
-## Cell 4. Instance, Class, Output Directory Settings
-
+## Cell 4. Instance, Class, Output Directory, Concepts List Settings
 #### INSTANCE_DIR
 * Directory for instance (training) images. Leave blank for default. 
 * Default is `training_images/{TOKEN_WORD}` 
@@ -78,9 +77,14 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 * You can selectively save your model(s) to Google Drive after training.
 #### OUTPUT_DIR
 * Enter the directory to save trained model(s)okay in. Leave empty for default. 
-* Default is : 
-  * `stable_diffusion_weights/{TOKEN_WORD}` or..
-  * `drive/MyDrive/stable_diffusion_weights/{TOKEN_WORD}` (save to google drive)
+* _Default is : 
+* `stable_diffusion_weights/{TOKEN_WORD}` or..
+* If you are saving to Google Drive then it will be: 
+* `drive/MyDrive/stable_diffusion_weights/{TOKEN_WORD}`_
+#### CONCEPTS LIST
+* A file `concepts_list.json` will be created.
+* To keep things simple, the list is only for one subject/concept, but can easily be adapted for multiple subjects. (see code)
+
 
 
 
