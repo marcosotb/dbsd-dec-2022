@@ -12,12 +12,17 @@ https://github.com/ShivamShrirao/diffusers/tree/main/examples/dreambooth
 This also serves as an exercise of me to to learn a bit of Python, Jupyter and git, as all are kinda new for me. 
 
 ### Why? 
-The performance of models trained on the original colab has occasionally been affected by sudden changes in dependencies, resulting in complaints about inconsistencies in the results. This issue seemed to have peaked in early January 2023, according to anecdotal evidence. Although the situation has stabilized, there are still sporadic comments regarding this matter.
+The performance of models trained on the original colab has occasionally been affected by sudden changes in dependencies, resulting in complaints about inconsistencies in the results. This issue seemed to have peaked in early January 2023, according to anecdotal evidence. Although the situation has stabilized, there are still occasional comments regarding this matter.
 
-The aim of this colab is to lock-in dependencies from late 2022. Diffusers from the repo will be built and installed from Commit `fbdf0a17055ffa34679cb34d986fabc1296d0785`. 
+The aim of this colab is to lock-in dependencies from late 2022. Diffusers from the repo isbuilt and installed from Commit `fbdf0a17055ffa34679cb34d986fabc1296d0785`. 
 
-train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) are made that require Accelerate 0.14.0 but we are using 0.12.0.  Specifically, references to the use of `accelerator.unwrap_model(model, keep_fp32_wrapper=True)`. need to be changed to just `accelerator.unwrap_model(model)`
+train_dreambooth.py needs to be modified since there are calls to an updated `accelerator.unwrap_model()` that require Accelerate 0.14.0 but we are using 0.12.0.  
 
+## Features?
+For the most part the colab should be very familiar however I've made it a bit more wordy and verbose with the intention of making it easier for people new to it. A few added functionalities:
+
+* Download diffusers, ckpt or safetensors
+* Convert all weights to ckpt or safetensors
 
 ## Cell 1. Google Drive & Build Environment
 #### Mount Google Drive
@@ -28,7 +33,7 @@ train_dreambooth.py needs to be modified since calls (introduced Jan 5th 2023) a
 * These dependencies date back to late 2022.  
 * Diffusers itself will be installed from commit `fbdf0a17055ffa34679cb34d986fabc1296d0785`.  
 * Scripts to convert to and from Stable Diffusion Original (ckpt/safetensors) and Diffusers are also downloaded. 
-* File train_dreambooth.py will be modified upon download to remove references to `keep_fp32_wrapper=True` when function `accelerator.unwrap_model()` is used since it is not available in Accelerate 0.12.0
+* File train_dreambooth.py will be modified upon download to remove references to `keep_fp32_wrapper=True` where function `accelerator.unwrap_model()` is used since it is not available in Accelerate 0.12.0
 ___
 ## Cell 2. Token Word, Class Word & Class Prompt
 #### Token Word.
