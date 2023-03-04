@@ -23,6 +23,10 @@ Mount Google Drive.  Will act like a local drive in the colab's filesystem. This
 * You store training images, models and other resources needed for training.  
 * You wish to quickly save trained models there so you can download at a later time.
 
-## Cell 2
-Build Environment. Downloads and installs required dependencies. 
+## Cell 2. Build Environment
+* Downloads and installs required dependencies. 
+* These dependencies date back to late 2022.  
+* Diffusers itself will be installed from commit `fbdf0a17055ffa34679cb34d986fabc1296d0785`.  
+* Scripts to convert to and from Stable Diffusion Original (ckpt/safetensors) and Diffusers are also downloaded. 
+* File train_dreambooth.py will be modified upon download to remove references to `keep_fp32_wrapper=True` when function `accelerator.unwrap_model()` is used since it is not available in Accelerate 0.12.0
 
