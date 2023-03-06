@@ -7,7 +7,7 @@
     <td><a target="_blank" href="https://colab.research.google.com/github/yushan777/dbsd-dec-2022/blob/main/dbsd_dec_2022.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="250"/><br>
 </a></td>
-    <td><a target="_blank" href="https://colab.research.google.com/github/yushan777/dbsd-dec-2022/blob/main/dbsd_dec_2022-original.ipynb">
+    <td><a target="_blank" href="https://colab.research.google.com/github/yushan777/dbsd-dec-2022/blob/main/dbsd-dec-2022-original.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="250"/> 
 </a></td>
 
