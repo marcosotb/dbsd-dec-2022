@@ -1,6 +1,19 @@
-<a target="_blank" href="https://colab.research.google.com/github/yushan777/dbsd-xmas-edition/blob/main/dbsd_dec_2022.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="300"/>
-</a>
+<table style="width:100%" text-align:center >
+  <tr>
+    <th>Alternative Layout</th>
+    <th>Original Layout</th>
+  </tr>
+  <tr>
+    <td><a target="_blank" href="https://colab.research.google.com/github/yushan777/dbsd-dec-2022/blob/main/dbsd_dec_2022.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="250"/><br>
+</a></td>
+    <td><a target="_blank" href="https://colab.research.google.com/github/yushan777/dbsd-dec-2022/blob/main/dbsd-dec-2022-original.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="250"/> 
+</a></td>
+
+  </tr>
+
+</table>
 
 # Dreambooth Stable Diffusion Winter 2022 Edition
 This colab is based on ShivamShrirao's repository and colab, modified to use older dependencies from late 2022.  
