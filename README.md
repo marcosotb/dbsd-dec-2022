@@ -36,3 +36,5 @@ For the most part the colab should be very familiar however I've made it a bit m
 
 * Download diffusers, ckpt or safetensors
 * Convert all weights to ckpt or safetensors
+
+If you are more familiar with the original colab's layout, you can use the link to the one with the original layout.
