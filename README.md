@@ -4,10 +4,10 @@
     <th>Original Layout</th>
   </tr>
   <tr>
-    <td><a target="_blank" href="https://colab.research.google.com/github/yushan777/dbsd-xmas-edition/blob/main/dbsd_dec_2022.ipynb">
+    <td><a target="_blank" href="https://colab.research.google.com/github/yushan777/dbsd-dec-2022/blob/main/dbsd_dec_2022.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="250"/><br>
 </a></td>
-    <td><a target="_blank" href="https://colab.research.google.com/github/yushan777/dbsd-xmas-edition/blob/main/dbsd_dec_2022_original.ipynb">
+    <td><a target="_blank" href="https://colab.research.google.com/github/yushan777/dbsd-dec-2022/blob/main/dbsd_dec_2022_original.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" width="250"/> 
 </a></td>
 
