@@ -1,6 +1,6 @@
 <table style="width:100%" text-align:center >
   <tr>
-    <th>Original Layout</th>
+    <th>Original Layout (Mostly)</th>
     <th>Alternative Layout</th>
   </tr>
   <tr>
